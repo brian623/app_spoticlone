@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Gotham-medium';
+  src: url('../fonts/GothamMedium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamBook.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Gotham-bold';
+  src: url('../fonts/GothamBold.ttf') format('truetype');
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.scrollbarBrown::-webkit-scrollbar{
+-webkit-appearance: none;
+
+}
+.scrollbarBrown::-webkit-scrollbar:vertical {
+  width:10px;
+}
+.scrollbarBrown::-webkit-scrollbar-button:increment,.scrollbarBrown::-webkit-scrollbar-button {
+  display: none;
+}
+.scrollbarBrown::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.scrollbarBrown::-webkit-scrollbar-thumb {
+  background-color: #5a5a5a;
+}
+
+.scrollbarBrown::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+.mejs-controls .mejs-time-rail .mejs-time-total {
+  background: #5a5a5a !important;
+}
